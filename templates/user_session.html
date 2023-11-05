@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Session</title>
+</head>
+<body>
+    <h1>User Session</h1>
+    <form method="POST">
+        <div>
+            <label for="user_input">Enter something:</label>
+            <input type="text" id="user_input" name="user_input" size="30">
+        </div>
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+    <div>
+        <p>User-specific data: {{ user_input }}</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Input Form</title>
+</head>
+<body>
+    <h1>Input Form</h1>
+    <form method="POST">
+        <div>
+            <label for="user_input">Enter something:</label>
+            <input type="text" id="user_input" name="user_input" size="30">
+        </div>
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+    <div>
+        {% if user_input %}
+            <p>You entered: {{ user_input }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>
+
